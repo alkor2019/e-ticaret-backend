@@ -1,0 +1,15 @@
+/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/bin/Debug/net7.0/E-Ticaret.Application.deps.json
+/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/bin/Debug/net7.0/E-Ticaret.Application.dll
+/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/bin/Debug/net7.0/E-Ticaret.Application.pdb
+/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/bin/Debug/net7.0/E-Ticaret.Domain.dll
+/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/bin/Debug/net7.0/E-Ticaret.Domain.pdb
+/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/obj/Debug/net7.0/E-Ticaret.Application.csproj.AssemblyReference.cache
+/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/obj/Debug/net7.0/E-Ticaret.Application.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/obj/Debug/net7.0/E-Ticaret.Application.AssemblyInfoInputs.cache
+/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/obj/Debug/net7.0/E-Ticaret.Application.AssemblyInfo.cs
+/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/obj/Debug/net7.0/E-Ticaret.Application.csproj.CoreCompileInputs.cache
+/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/obj/Debug/net7.0/E-Ticaret.Application.csproj.CopyComplete
+/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/obj/Debug/net7.0/E-Ticaret.Application.dll
+/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/obj/Debug/net7.0/refint/E-Ticaret.Application.dll
+/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/obj/Debug/net7.0/E-Ticaret.Application.pdb
+/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/obj/Debug/net7.0/ref/E-Ticaret.Application.dll
