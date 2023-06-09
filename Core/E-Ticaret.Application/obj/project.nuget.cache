@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "sBuaGh3R2j2hzN/k0VChR7I/eH1496hWaUtRBwtXtkjAF7SDWs8a6wRtgu/exePM3VX+BKjCzTv2g0q7B3gFZw==",
+  "dgSpecHash": "TAZwyDZyquZG1RUvOkbayNiqQmaZNX6lJdA1oXdZgbrJbueNDhuQb+n7onjgBqiZfAqtZgLnZrIPVvlVvIsSZw==",
   "success": true,
   "projectFilePath": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj",
   "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/fluentvalidation/11.5.2/fluentvalidation.11.5.2.nupkg.sha512",
+    "/home/codespace/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.2/fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
     "/home/codespace/.nuget/packages/microsoft.entityframeworkcore/7.0.0/microsoft.entityframeworkcore.7.0.0.nupkg.sha512",
     "/home/codespace/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.0/microsoft.entityframeworkcore.abstractions.7.0.0.nupkg.sha512",
     "/home/codespace/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.0/microsoft.entityframeworkcore.analyzers.7.0.0.nupkg.sha512",

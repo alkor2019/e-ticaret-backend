@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/resource/product-images/0.11662287893801426.png",
+      "PackagePath": "staticwebassets/resource/product-images/0.11662287893801426.png"
+    },
+    {
+      "Id": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/resource/product-images/0.23108128145924378.png",
+      "PackagePath": "staticwebassets/resource/product-images/0.23108128145924378.png"
+    },
+    {
+      "Id": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/resource/product-images/0.7848423258741541.png",
+      "PackagePath": "staticwebassets/resource/product-images/0.7848423258741541.png"
+    },
+    {
+      "Id": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/resource/product-images/0.8727151429241817.png",
+      "PackagePath": "staticwebassets/resource/product-images/0.8727151429241817.png"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.E-Ticaret.ApiUI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.E-Ticaret.ApiUI.props",
+      "PackagePath": "build\\E-Ticaret.ApiUI.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.E-Ticaret.ApiUI.props",
+      "PackagePath": "buildMultiTargeting\\E-Ticaret.ApiUI.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.E-Ticaret.ApiUI.props",
+      "PackagePath": "buildTransitive\\E-Ticaret.ApiUI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

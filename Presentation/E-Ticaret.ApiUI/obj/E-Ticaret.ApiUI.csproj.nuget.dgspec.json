@@ -42,6 +42,18 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.2, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.5.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -89,6 +101,63 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.203/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj",
+        "projectName": "E-Ticaret.Infrastructure",
+        "projectPath": "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj",
+        "packagesPath": "/home/codespace/.nuget/packages/",
+        "outputPath": "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/codespace/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj": {
+                "projectPath": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -231,6 +300,9 @@
               },
               "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj": {
                 "projectPath": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj"
+              },
+              "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj": {
+                "projectPath": "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj"
               },
               "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Persistence/E-Ticaret.Persistence.csproj": {
                 "projectPath": "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Persistence/E-Ticaret.Persistence.csproj"

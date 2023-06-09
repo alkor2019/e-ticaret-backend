@@ -2,6 +2,44 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "FluentValidation/11.5.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation.AspNetCore/11.3.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.5.1",
+          "FluentValidation.DependencyInjectionExtensions": "11.5.1"
+        },
+        "compile": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.5.2": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.5.2",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.OpenApi/7.0.5": {
         "type": "package",
         "dependencies": {
@@ -464,6 +502,9 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "E-Ticaret.Domain": "1.0.0",
+          "FluentValidation": "11.5.2",
+          "FluentValidation.AspNetCore": "11.3.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.5.2",
           "Microsoft.EntityFrameworkCore": "7.0.0"
         },
         "compile": {
@@ -481,6 +522,19 @@
         },
         "runtime": {
           "bin/placeholder/E-Ticaret.Domain.dll": {}
+        }
+      },
+      "E-Ticaret.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "E-Ticaret.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/E-Ticaret.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/E-Ticaret.Infrastructure.dll": {}
         }
       },
       "E-Ticaret.Persistence/1.0.0": {
@@ -504,6 +558,55 @@
     }
   },
   "libraries": {
+    "FluentValidation/11.5.2": {
+      "sha512": "kj/hW/iusp2zq1Vt1YPLgDj6UG0DhoJXGkLwjLwm3j7vUtRF8DVA5vHJfItG3BxDjLWJUR2pvw8fK7rnuysZNA==",
+      "type": "package",
+      "path": "fluentvalidation/11.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.5.2.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.dll"
+      ]
+    },
+    "FluentValidation.AspNetCore/11.3.0": {
+      "sha512": "jtFVgKnDFySyBlPS8bZbTKEEwJZnn11rXXJ2SQnjDhZ56rQqybBg9Joq4crRLz3y0QR8WoOq4iE4piV81w/Djg==",
+      "type": "package",
+      "path": "fluentvalidation.aspnetcore/11.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+        "fluentvalidation.aspnetcore.nuspec",
+        "lib/net5.0/FluentValidation.AspNetCore.dll",
+        "lib/net6.0/FluentValidation.AspNetCore.dll",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.5.2": {
+      "sha512": "ycibtdWdluIx0aTgQvO7Kjd5GjNRpD92z4/hEJc8u1luZ5ff1k0JpwPGmL+YFbPVYFk+A6gYIrVI4QdZfSJJdQ==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll"
+      ]
+    },
     "Microsoft.AspNetCore.OpenApi/7.0.5": {
       "sha512": "yxFvk9BsgL/eDJVsPp0zbUpL73u9uXLYTnWoMBvnJdm8+970YuhM2XWcDOyetjkp8l8z00MHgfYHCRXOnLx/+Q==",
       "type": "package",
@@ -1437,6 +1540,11 @@
       "path": "../../Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj",
       "msbuildProject": "../../Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj"
     },
+    "E-Ticaret.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj",
+      "msbuildProject": "../../Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj"
+    },
     "E-Ticaret.Persistence/1.0.0": {
       "type": "project",
       "path": "../../Infrastructure/E-Ticaret.Persistence/E-Ticaret.Persistence.csproj",
@@ -1447,6 +1555,7 @@
     "net7.0": [
       "E-Ticaret.Application >= 1.0.0",
       "E-Ticaret.Domain >= 1.0.0",
+      "E-Ticaret.Infrastructure >= 1.0.0",
       "E-Ticaret.Persistence >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.5",
       "Swashbuckle.AspNetCore >= 6.4.0"
@@ -1482,6 +1591,9 @@
             },
             "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj": {
               "projectPath": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj"
+            },
+            "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj": {
+              "projectPath": "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj"
             },
             "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Persistence/E-Ticaret.Persistence.csproj": {
               "projectPath": "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Persistence/E-Ticaret.Persistence.csproj"

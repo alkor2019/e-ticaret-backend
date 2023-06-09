@@ -1,10 +1,14 @@
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/appsettings.Development.json
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/appsettings.json
+/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/E-Ticaret.ApiUI.staticwebassets.runtime.json
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/E-Ticaret.ApiUI
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/E-Ticaret.ApiUI.deps.json
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/E-Ticaret.ApiUI.runtimeconfig.json
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/E-Ticaret.ApiUI.dll
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/E-Ticaret.ApiUI.pdb
+/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/FluentValidation.dll
+/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/FluentValidation.AspNetCore.dll
+/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/FluentValidation.DependencyInjectionExtensions.dll
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -17,10 +21,12 @@
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/E-Ticaret.Application.dll
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/E-Ticaret.Domain.dll
+/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/E-Ticaret.Infrastructure.dll
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/E-Ticaret.Persistence.dll
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/E-Ticaret.Application.pdb
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/E-Ticaret.Domain.pdb
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/E-Ticaret.Persistence.pdb
+/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/E-Ticaret.Infrastructure.pdb
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/obj/Debug/net7.0/E-Ticaret.ApiUI.csproj.AssemblyReference.cache
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/obj/Debug/net7.0/E-Ticaret.ApiUI.GeneratedMSBuildEditorConfig.editorconfig
 /workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/obj/Debug/net7.0/E-Ticaret.ApiUI.AssemblyInfoInputs.cache

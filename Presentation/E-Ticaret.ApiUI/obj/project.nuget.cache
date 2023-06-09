@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "4px20ENgPaZuanKv/bzflMzpCB4xNFE/eqJifqMgjzJSUmf1NM/LY6Cxb1Qwa9A9CFMoE4Q9qqr7nFDg0Ad3YA==",
+  "dgSpecHash": "gxDtK0SMj/P9NHxUcgZ8v0sZlTHk4BYqEKt8v/obsgTtUWBIHrRiElBNN/HOezkSkeI83iQjcswkEm5ryu1Gtw==",
   "success": true,
   "projectFilePath": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/E-Ticaret.ApiUI.csproj",
   "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/fluentvalidation/11.5.2/fluentvalidation.11.5.2.nupkg.sha512",
+    "/home/codespace/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.2/fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
     "/home/codespace/.nuget/packages/microsoft.aspnetcore.openapi/7.0.5/microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "/home/codespace/.nuget/packages/microsoft.entityframeworkcore/7.0.0/microsoft.entityframeworkcore.7.0.0.nupkg.sha512",
     "/home/codespace/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.0/microsoft.entityframeworkcore.abstractions.7.0.0.nupkg.sha512",

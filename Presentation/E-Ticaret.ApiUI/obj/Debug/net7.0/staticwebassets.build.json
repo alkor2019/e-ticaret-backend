@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "FCgjfrZSERxRY26YOJeiHd8lOeyNCyNpHM9N8PDGNBk=",
+  "Hash": "VSauyLeFXjv32eC5lCvUwNekX2JFae/4kPn64tvPoSA=",
   "Source": "E-Ticaret.ApiUI",
   "BasePath": "_content/E-Ticaret.ApiUI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "E-Ticaret.ApiUI/wwwroot",
+      "Source": "E-Ticaret.ApiUI",
+      "ContentRoot": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "BasePath": "_content/E-Ticaret.ApiUI",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

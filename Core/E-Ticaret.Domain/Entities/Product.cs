@@ -10,7 +10,7 @@ namespace E_Ticaret.Domain.Entities
         public int CategoryId { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
-        public short UnitsInStock { get; set; }
+        public int UnitsInStock { get; set; }
         
         public Category Category { get; set; }
         public ICollection<Order> Orders { get; set; }
