@@ -9,7 +9,7 @@ builder.Services.AddPersistenceServices();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
-  policy.WithOrigins("https://alkor2019-stunning-potato-59vq79p5v6q27w69-4200.preview.app.github.dev").AllowAnyHeader().AllowAnyMethod()
+  policy.WithOrigins("https://4200-krmn28-minieticaretclie-re921ap2suy.ws-us99.gitpod.io").AllowAnyHeader().AllowAnyMethod()
 ));
 
 var app = builder.Build();

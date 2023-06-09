@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/home/codespace/.nuget/packages/": {}
+    "/home/gitpod/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj",
+      "projectUniqueName": "/workspace/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj",
       "projectName": "E-Ticaret.Domain",
-      "projectPath": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj",
-      "packagesPath": "/home/codespace/.nuget/packages/",
-      "outputPath": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/obj/",
+      "projectPath": "/workspace/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj",
+      "packagesPath": "/home/gitpod/.nuget/packages/",
+      "outputPath": "/workspace/e-ticaret-backend/Core/E-Ticaret.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/codespace/.nuget/NuGet/NuGet.Config"
+        "/home/gitpod/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.203/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/linuxbrew/.linuxbrew/Cellar/dotnet/7.0.100/libexec/sdk/7.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }

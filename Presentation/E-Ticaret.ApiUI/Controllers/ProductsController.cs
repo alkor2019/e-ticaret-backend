@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using E_Ticaret.Application.Repositories.Products;
 using E_Ticaret.Application.ViewModels.Products;
 using Microsoft.AspNetCore.Mvc;
+using E_Ticaret.Application.RequestParamerters;
 
 namespace E_Ticaret.ApiUI.Controllers
 {
@@ -22,10 +23,15 @@ namespace E_Ticaret.ApiUI.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult GetAll(Pagination pagination)
         {
-             var products = _productReadRepository.GetAll();
-             return Ok(products);
+             var data = _productReadRepository.GetAll();
+             var products = data.Skip(pagination.Page * pagination.Size).Take(pagination.Size);
+             int totalCount = data.Count();
+             return Ok(new {
+                 totalCount = totalCount,
+                 products = products
+             });
         }
 
         [HttpGet("{id}")]
