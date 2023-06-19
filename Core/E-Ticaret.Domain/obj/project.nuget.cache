@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9vKRSMwrj1bDWTJSvslB0s8gVLcO1slp4dkpBvni3nP5FGDxrCEBKqWWAv3czdnvZjv+pIe5ORTiLZ1229vC8w==",
+  "dgSpecHash": "tOyQ0tAIaa4oSTx32Cty4RfEelBu2WlX48+nEzToq48W2ja+CKZzEovzy1DOvD47GIbP6ZkWcK+36BSoVw5oqw==",
   "success": true,
-  "projectFilePath": "/workspace/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj",
+  "projectFilePath": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

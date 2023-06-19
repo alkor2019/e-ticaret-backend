@@ -16,6 +16,7 @@
     <ProjectReference Include="..\..\Core\E-Ticaret.Application\E-Ticaret.Application.csproj" />
     <ProjectReference Include="..\..\Core\E-Ticaret.Domain\E-Ticaret.Domain.csproj" />
     <ProjectReference Include="..\..\Infrastructure\E-Ticaret.Persistence\E-Ticaret.Persistence.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\E-Ticaret.Infrastructure\E-Ticaret.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

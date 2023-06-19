@@ -17,6 +17,9 @@ namespace E_Ticaret.Persistence.Contexts
           public DbSet<Order> Orders { get; set; }
           public DbSet<Customer> Customers { get; set; }
           public DbSet<Category> Categories { get; set; }
+          public DbSet<FileEntity> FileEntities { get; set; }
+          public DbSet<ProductImageFile> ProductImageFiles { get; set; }
+          public DbSet<InvoiceFile> InvoiceFiles { get; set; }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {

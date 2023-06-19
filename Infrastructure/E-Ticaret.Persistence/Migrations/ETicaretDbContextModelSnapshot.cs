@@ -68,6 +68,45 @@ namespace ETicaret.Persistence.Migrations
                     b.ToTable("Customers");
                 });
 
+            modelBuilder.Entity("E_Ticaret.Domain.Entities.FileEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Path")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("StorageName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("FileEntities");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("FileEntity");
+
+                    b.UseTphMappingStrategy();
+                });
+
             modelBuilder.Entity("E_Ticaret.Domain.Entities.Order", b =>
                 {
                     b.Property<int>("Id")
@@ -149,6 +188,38 @@ namespace ETicaret.Persistence.Migrations
                     b.ToTable("OrderProduct");
                 });
 
+            modelBuilder.Entity("ProductProductImageFile", b =>
+                {
+                    b.Property<int>("ProductImageFilesId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("ProductsId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("ProductImageFilesId", "ProductsId");
+
+                    b.HasIndex("ProductsId");
+
+                    b.ToTable("ProductProductImageFile");
+                });
+
+            modelBuilder.Entity("E_Ticaret.Domain.Entities.InvoiceFile", b =>
+                {
+                    b.HasBaseType("E_Ticaret.Domain.Entities.FileEntity");
+
+                    b.Property<double>("InvoiceAmount")
+                        .HasColumnType("double precision");
+
+                    b.HasDiscriminator().HasValue("InvoiceFile");
+                });
+
+            modelBuilder.Entity("E_Ticaret.Domain.Entities.ProductImageFile", b =>
+                {
+                    b.HasBaseType("E_Ticaret.Domain.Entities.FileEntity");
+
+                    b.HasDiscriminator().HasValue("ProductImageFile");
+                });
+
             modelBuilder.Entity("E_Ticaret.Domain.Entities.Order", b =>
                 {
                     b.HasOne("E_Ticaret.Domain.Entities.Customer", "Customer")
@@ -176,6 +247,21 @@ namespace ETicaret.Persistence.Migrations
                     b.HasOne("E_Ticaret.Domain.Entities.Order", null)
                         .WithMany()
                         .HasForeignKey("OrdersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("E_Ticaret.Domain.Entities.Product", null)
+                        .WithMany()
+                        .HasForeignKey("ProductsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ProductProductImageFile", b =>
+                {
+                    b.HasOne("E_Ticaret.Domain.Entities.ProductImageFile", null)
+                        .WithMany()
+                        .HasForeignKey("ProductImageFilesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

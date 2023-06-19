@@ -5,28 +5,27 @@ using System.Threading.Tasks;
 using E_Ticaret.Application.Repositories.Categories;
 using Microsoft.AspNetCore.Mvc;
 using E_Ticaret.Domain.Entities;
+using MediatR;
+using E_Ticaret.Application.Features.Queries.CategoryQueries.GetAllQuery;
+
 namespace E_Ticaret.ApiUI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
     public class CategoriesController : ControllerBase
     {
-        private readonly ICategoryReadRepository _categoryReadRepository;
-        private readonly ICategoryWriteRepository _categoryWriteRepository;
+        private readonly IMediator _mediator;
 
-        public CategoriesController(ICategoryReadRepository categoryReadRepository, ICategoryWriteRepository categoryWriteRepository)
+        public CategoriesController(IMediator mediator)
         {
-            _categoryReadRepository = categoryReadRepository;
-            _categoryWriteRepository = categoryWriteRepository;
+            _mediator = mediator;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get([FromQuery] GetAllCategoryQueryRequest request)
         {
-           
-          
-            var categories = _categoryReadRepository.GetAll();
-            return Ok(categories);
+            var response = await _mediator.Send(request);
+            return Ok(response);
         }
     }
 }

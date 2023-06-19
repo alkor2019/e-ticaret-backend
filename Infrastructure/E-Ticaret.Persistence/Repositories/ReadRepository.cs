@@ -47,10 +47,10 @@ namespace E_Ticaret.Persistence.Repositories
 
         public IQueryable<T> GetWhere(Expression<Func<T, bool>> method, bool tracking = true)
         {
-            var queries = Table.AsQueryable();
+            var queries = Table.Where(method);
             if(!tracking)
                 queries = queries.AsNoTracking();
-            return queries.Where(method);
+            return queries;
         }
     }
 }

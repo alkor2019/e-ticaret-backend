@@ -14,5 +14,6 @@ namespace E_Ticaret.Domain.Entities
         
         public Category Category { get; set; }
         public ICollection<Order> Orders { get; set; }
+        public ICollection<ProductImageFile> ProductImageFiles { get; set; }
     }
 }

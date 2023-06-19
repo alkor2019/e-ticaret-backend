@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/dometo-new-rn-2.jpg",
+      "PackagePath": "staticwebassets/product-images/dometo-new-rn-2.jpg"
+    },
+    {
+      "Id": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/dometo-new-rn.jpg",
+      "PackagePath": "staticwebassets/product-images/dometo-new-rn.jpg"
+    },
+    {
+      "Id": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/nar-aac-2.jpg",
+      "PackagePath": "staticwebassets/product-images/nar-aac-2.jpg"
+    },
+    {
+      "Id": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/nar-aac.jpg",
+      "PackagePath": "staticwebassets/product-images/nar-aac.jpg"
+    },
+    {
+      "Id": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/new-bg-2.jpg",
+      "PackagePath": "staticwebassets/product-images/new-bg-2.jpg"
+    },
+    {
+      "Id": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/new-bg.jpg",
+      "PackagePath": "staticwebassets/product-images/new-bg.jpg"
+    },
+    {
+      "Id": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/news-bg-2.jpg",
+      "PackagePath": "staticwebassets/product-images/news-bg-2.jpg"
+    },
+    {
+      "Id": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/news-bg.jpg",
+      "PackagePath": "staticwebassets/product-images/news-bg.jpg"
+    },
+    {
+      "Id": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/news-n-bg-2.jpg",
+      "PackagePath": "staticwebassets/product-images/news-n-bg-2.jpg"
+    },
+    {
+      "Id": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/news-n-bg.jpg",
+      "PackagePath": "staticwebassets/product-images/news-n-bg.jpg"
+    },
+    {
+      "Id": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/newsbg-2.jpg",
+      "PackagePath": "staticwebassets/product-images/newsbg-2.jpg"
+    },
+    {
+      "Id": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/newsbg.jpg",
+      "PackagePath": "staticwebassets/product-images/newsbg.jpg"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.E-Ticaret.ApiUI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.E-Ticaret.ApiUI.props",
+      "PackagePath": "build\\E-Ticaret.ApiUI.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.E-Ticaret.ApiUI.props",
+      "PackagePath": "buildMultiTargeting\\E-Ticaret.ApiUI.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.E-Ticaret.ApiUI.props",
+      "PackagePath": "buildTransitive\\E-Ticaret.ApiUI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
