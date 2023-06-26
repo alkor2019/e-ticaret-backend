@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 using E_Ticaret.Domain.Entities;
 using E_Ticaret.Domain.Entities.Common;
 using Microsoft.EntityFrameworkCore;
-//using E_Ticaret.Domain.Entities;
+using E_Ticaret.Domain.Entities.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
 namespace E_Ticaret.Persistence.Contexts
 {
-    public class ETicaretDbContext : DbContext
+    public class ETicaretDbContext : IdentityDbContext<AppUser, AppRole, int>
     {
           public ETicaretDbContext(DbContextOptions options) : base(options)
           {}

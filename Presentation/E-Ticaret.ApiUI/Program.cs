@@ -20,7 +20,7 @@ builder.Services.AddStorage<LocalStorage>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
-  policy.WithOrigins("https://mrayal-potential-guacamole-jxv697j77qrc54pg-4200.preview.app.github.dev").AllowAnyHeader().AllowAnyMethod()
+  policy.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod()
 ));
 
 builder.Services.AddControllers(options =>

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/E-Ticaret.ApiUI.csproj": {}
+    "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/E-Ticaret.ApiUI.csproj": {}
   },
   "projects": {
-    "/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj": {
+    "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj",
+        "projectUniqueName": "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj",
         "projectName": "E-Ticaret.Application",
-        "projectPath": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/obj/",
+        "projectPath": "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj",
+        "packagesPath": "/home/ayhan28ak/.nuget/packages/",
+        "outputPath": "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "/home/ayhan28ak/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj": {
-                "projectPath": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj"
+              "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj": {
+                "projectPath": "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj"
               }
             }
           }
@@ -87,21 +87,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.203/sdk/7.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj": {
+    "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj",
+        "projectUniqueName": "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj",
         "projectName": "E-Ticaret.Domain",
-        "projectPath": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/obj/",
+        "projectPath": "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj",
+        "packagesPath": "/home/ayhan28ak/.nuget/packages/",
+        "outputPath": "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "/home/ayhan28ak/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -124,6 +124,16 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -140,21 +150,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.203/sdk/7.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj": {
+    "/home/ayhan28ak/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj",
+        "projectUniqueName": "/home/ayhan28ak/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj",
         "projectName": "E-Ticaret.Infrastructure",
-        "projectPath": "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/obj/",
+        "projectPath": "/home/ayhan28ak/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj",
+        "packagesPath": "/home/ayhan28ak/.nuget/packages/",
+        "outputPath": "/home/ayhan28ak/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "/home/ayhan28ak/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -166,8 +176,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj": {
-                "projectPath": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj"
+              "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj": {
+                "projectPath": "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj"
               }
             }
           }
@@ -203,21 +213,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.203/sdk/7.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Persistence/E-Ticaret.Persistence.csproj": {
+    "/home/ayhan28ak/e-ticaret-backend/Infrastructure/E-Ticaret.Persistence/E-Ticaret.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Persistence/E-Ticaret.Persistence.csproj",
+        "projectUniqueName": "/home/ayhan28ak/e-ticaret-backend/Infrastructure/E-Ticaret.Persistence/E-Ticaret.Persistence.csproj",
         "projectName": "E-Ticaret.Persistence",
-        "projectPath": "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Persistence/E-Ticaret.Persistence.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Persistence/obj/",
+        "projectPath": "/home/ayhan28ak/e-ticaret-backend/Infrastructure/E-Ticaret.Persistence/E-Ticaret.Persistence.csproj",
+        "packagesPath": "/home/ayhan28ak/.nuget/packages/",
+        "outputPath": "/home/ayhan28ak/e-ticaret-backend/Infrastructure/E-Ticaret.Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "/home/ayhan28ak/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -229,11 +239,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj": {
-                "projectPath": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj"
+              "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj": {
+                "projectPath": "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj"
               },
-              "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj": {
-                "projectPath": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj"
+              "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj": {
+                "projectPath": "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj"
               }
             }
           }
@@ -287,43 +297,44 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.203/sdk/7.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/E-Ticaret.ApiUI.csproj": {
+    "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/E-Ticaret.ApiUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/E-Ticaret.ApiUI.csproj",
+        "projectUniqueName": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/E-Ticaret.ApiUI.csproj",
         "projectName": "E-Ticaret.ApiUI",
-        "projectPath": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/E-Ticaret.ApiUI.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/obj/",
+        "projectPath": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/E-Ticaret.ApiUI.csproj",
+        "packagesPath": "/home/ayhan28ak/.nuget/packages/",
+        "outputPath": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "/home/ayhan28ak/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "/usr/share/dotnet/sdk/7.0.305/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj": {
-                "projectPath": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj"
+              "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj": {
+                "projectPath": "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Application/E-Ticaret.Application.csproj"
               },
-              "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj": {
-                "projectPath": "/workspaces/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj"
+              "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj": {
+                "projectPath": "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj"
               },
-              "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj": {
-                "projectPath": "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj"
+              "/home/ayhan28ak/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj": {
+                "projectPath": "/home/ayhan28ak/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/E-Ticaret.Infrastructure.csproj"
               },
-              "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Persistence/E-Ticaret.Persistence.csproj": {
-                "projectPath": "/workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Persistence/E-Ticaret.Persistence.csproj"
+              "/home/ayhan28ak/e-ticaret-backend/Infrastructure/E-Ticaret.Persistence/E-Ticaret.Persistence.csproj": {
+                "projectPath": "/home/ayhan28ak/e-ticaret-backend/Infrastructure/E-Ticaret.Persistence/E-Ticaret.Persistence.csproj"
               }
             }
           }
@@ -366,7 +377,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.203/sdk/7.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
         }
       }
     }

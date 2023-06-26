@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = E_Ticaret.Infrastructure
-build_property.ProjectDir = /workspaces/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/
+build_property.ProjectDir = /home/ayhan28ak/e-ticaret-backend/Infrastructure/E-Ticaret.Infrastructure/
