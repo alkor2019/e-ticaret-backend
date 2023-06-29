@@ -1,4 +1,6 @@
 using E_Ticaret.Application.Repositories.Products;
+using E_Ticaret.Application.ViewModels.Products;
+using E_Ticaret.Domain.Entities;
 using MediatR;
 
 namespace E_Ticaret.Application.Features.Queries.ProductQueries.GetAllQuery
@@ -15,21 +17,19 @@ namespace E_Ticaret.Application.Features.Queries.ProductQueries.GetAllQuery
         public async Task<GetAllProductQueryResponse> Handle(GetAllProductQueryRequest request, CancellationToken cancellationToken)
         {
             var data = _productReadRepository.GetAll();
-             var products = data.Skip(request.Page * request.Size).Take(request.Size)
-             .Select(p => new{
-                p.Id,
-                p.CategoryId,
-                p.Name,
-                p.Price,
-                p.UnitsInStock,
-                p.CreatedDate,
-                p.UpdatedDate
-             });
-             int totalCount = data.Count();
-             return new (){
-                 TotalCount = totalCount,
-                 Products = products
-             };
+            VM_Product_List result = new();
+             result.Products = data.Skip(request.Page * request.Size).Take(request.Size)
+             .Select(p => new Product(){
+                Id = p.Id,
+                CategoryId = p.CategoryId,
+                Name = p.Name,
+                Price = p.Price,
+                UnitsInStock = p.UnitsInStock,
+                CreatedDate = p.CreatedDate,
+                UpdatedDate = p.UpdatedDate
+             }).ToList();
+              result.TotalCount = data.Count();
+             return new (result, "Ürünler listendi", true);
         }
     }
 }

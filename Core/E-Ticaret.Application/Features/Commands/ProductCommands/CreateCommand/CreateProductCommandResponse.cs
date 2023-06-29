@@ -1,8 +1,12 @@
+using E_Ticaret.Application.Abstractions.Results;
+
 namespace E_Ticaret.Application.Features.Commands.ProductCommands.CreateCommand
 {
-    public class CreateProductCommandResponse
+    public class CreateProductCommandResponse : Result
     {
-        public string Message { get; set; }
-        public bool Success { get; set; }
+        public CreateProductCommandResponse(string message, bool success) : base(message, success)
+        {
+             
+        }
     }
 }

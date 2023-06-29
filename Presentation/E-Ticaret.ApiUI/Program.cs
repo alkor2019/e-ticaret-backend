@@ -1,3 +1,4 @@
+using System.Text;
 using E_Ticaret.Application;
 using E_Ticaret.Application.Validators.Products;
 using E_Ticaret.Infrastructure;
@@ -5,6 +6,8 @@ using E_Ticaret.Infrastructure.Filters;
 using E_Ticaret.Infrastructure.Services.Storage.Local;
 using E_Ticaret.Persistence;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +33,22 @@ builder.Services.AddControllers(options =>
     .AddFluentValidation(configuration => configuration.RegisterValidatorsFromAssemblyContaining<CreateProductValidator>())
     .ConfigureApiBehaviorOptions(options => options.SuppressModelStateInvalidFilter = true);
 
+
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+.AddJwtBearer("Admin", options => {
+     options.TokenValidationParameters = new(){
+          ValidateAudience = true,
+          ValidateIssuer = true,
+          ValidateLifetime = true,
+          ValidateIssuerSigningKey = true,
+        
+          ValidAudience = builder.Configuration["TokenOptions:Audience"],
+          ValidIssuer = builder.Configuration["TokenOptions:Issuer"],
+          IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["TokenOptions:SecurityKey"])),
+
+     };
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -42,6 +61,7 @@ app.UseStaticFiles();
 app.UseCors();
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

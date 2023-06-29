@@ -14,12 +14,9 @@ namespace E_Ticaret.Application.Features.Commands.ProductCommands.RemoveCommand
 
         public async Task<RemoveProductCommandResponse> Handle(RemoveProductCommandRequest request, CancellationToken cancellationToken)
         {
-            await _productWriteRepository.RemoveAsync(request.Id);
+           var result =  await _productWriteRepository.RemoveAsync(request.Id);
             await _productWriteRepository.SaveAsync();
-            return new (){
-                 Message = "Ürün silindi",
-                 Success = true
-            };
+            return result ? new("Ürün başrıyla silindi", true) : new("Ürün silinirken bir hata oluştu", false);
         }
     }
 }

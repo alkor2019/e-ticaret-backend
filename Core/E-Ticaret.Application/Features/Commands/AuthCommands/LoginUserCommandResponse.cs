@@ -1,11 +1,16 @@
+using E_Ticaret.Application.Abstractions.Results;
+using E_Ticaret.Application.Abstractions.Security;
+
 namespace E_Ticaret.Application.Features.Commands.AuthCommands
 {
-    public class LoginUserCommandResponse
+    public class LoginUserCommandResponse : DataResult<TokenModel>
     {
-        public string Message { get; set; }
-        
-        public bool Succeeded { get; set; }
-        
-        
+        public LoginUserCommandResponse(TokenModel data, string message, bool success) : base(data, message, success)
+        {
+        }
+
+      
+       
+       
     }
 }

@@ -1,8 +1,11 @@
+using E_Ticaret.Application.Abstractions.Results;
+
 namespace E_Ticaret.Application.Features.Commands.ProductCommands.RemoveCommand
 {
-    public class RemoveProductCommandResponse
+    public class RemoveProductCommandResponse : Result
     {
-        public string Message { get; set; }
-        public bool Success { get; set; }
+        public RemoveProductCommandResponse(string message, bool success) : base(message, success)
+        {
+        }
     }
 }

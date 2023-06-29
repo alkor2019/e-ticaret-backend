@@ -27,17 +27,14 @@ namespace E_Ticaret.Application.Features.Commands.ProductImageCommands.UploadCom
              Product product = await _productReadRepository.GetByIdAsync(request.Id);
              
 
-             await _productImageFileWriteRepository.AddRangeAsync(result.Select(f => new ProductImageFile{
+            bool dbResult = await _productImageFileWriteRepository.AddRangeAsync(result.Select(f => new ProductImageFile{
                     Path= f.path,
                     FileName = f.fileName,
                     StorageName = _storageService.StorageName,
                     Products = new List<Product>(){product}
              }).ToList());
              await _productWriteRepository.SaveAsync();
-             return new(){
-                Message = "Resimler yüklendi",
-                Success = true
-             };
+            return dbResult ? new("Dosyalar başrıyla yüklendi", true) : new("Dosyalar yüklenirken bir hata oluştu", false);
         }
     }
 }

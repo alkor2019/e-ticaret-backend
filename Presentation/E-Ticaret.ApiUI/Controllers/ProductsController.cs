@@ -21,11 +21,13 @@ using E_Ticaret.Application.Features.Commands.ProductCommands.RemoveCommand;
 using E_Ticaret.Application.Features.Commands.ProductImageCommands.UploadCommand;
 using E_Ticaret.Application.Features.Commands.ProductImageCommands.RemoveCommand;
 using E_Ticaret.Application.Features.Queries.ProductImageQueries.GetByProductIdQuery;
+using Microsoft.AspNetCore.Authorization;
 
 namespace E_Ticaret.ApiUI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize(AuthenticationSchemes = "Admin")]
     public class ProductsController : ControllerBase
     {
          private readonly IMediator _mediator;

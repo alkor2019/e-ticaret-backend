@@ -20,11 +20,8 @@ namespace E_Ticaret.Application.Features.Commands.ProductCommands.UpdateCommand
             product.Name = request.Name;
             product.Price = request.Price;
             product.UnitsInStock = request.UnitsInStock;
-            await _productWriteRepository.SaveAsync();
-            return new(){
-                    Message = "Ürün Güncellendi",
-                    Success = true
-            };
+            int result =  await _productWriteRepository.SaveAsync();
+            return  result > 0 ? new("Ürün başarıyla güncellendi", true) : new("Ürün güncellenirken bir hata oluştu", false);
         }
     }
 

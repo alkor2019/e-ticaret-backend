@@ -162,3 +162,15 @@
 /home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/obj/Debug/net7.0/ref/E-Ticaret.ApiUI.dll
 /home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/System.Security.Permissions.dll
+/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/Google.Apis.dll
+/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/Google.Apis.Auth.PlatformServices.dll
+/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/Google.Apis.Auth.dll
+/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/Google.Apis.Core.dll
+/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/bin/Debug/net7.0/Newtonsoft.Json.dll

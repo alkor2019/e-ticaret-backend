@@ -1,10 +1,12 @@
+using E_Ticaret.Application.Abstractions.Results;
 using E_Ticaret.Domain.Entities;
 
 namespace E_Ticaret.Application.Features.Queries.CategoryQueries.GetAllQuery
 {
-    public class GetAllCategoryQueryResponse
+    public class GetAllCategoryQueryResponse : DataResult<List<Category>>
     {
-         public int Id { get; set; }
-         public string Name { get; set; }
+        public GetAllCategoryQueryResponse(List<Category> data, string message, bool success) : base(data, message, success)
+        {
+        }
     }
 }

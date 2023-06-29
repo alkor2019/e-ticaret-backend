@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace E_Ticaret.Application.Features.Queries.ProductImageQueries.GetByProductIdQuery
 {
-    public class GetByProductIdProductImageQueryHandler : IRequestHandler<GetByProductIdProductImageQueryRequest, List<GetByProductIdProductImageQueryResponse>>
+    public class GetByProductIdProductImageQueryHandler : IRequestHandler<GetByProductIdProductImageQueryRequest, GetByProductIdProductImageQueryResponse>
     {
             private readonly IProductReadRepository _productReadRepository;
             private readonly IProductWriteRepository _productWriteRepository;
@@ -16,18 +16,18 @@ namespace E_Ticaret.Application.Features.Queries.ProductImageQueries.GetByProduc
             _productWriteRepository = productWriteRepository;
         }
 
-        public async Task<List<GetByProductIdProductImageQueryResponse>> Handle(GetByProductIdProductImageQueryRequest request, CancellationToken cancellationToken)
+        public async Task<GetByProductIdProductImageQueryResponse> Handle(GetByProductIdProductImageQueryRequest request, CancellationToken cancellationToken)
             {
                         Product? product = await _productReadRepository.Table.Include(p => p.ProductImageFiles)
                         .FirstOrDefaultAsync(x => x.Id == request.Id);
 
-                        var result = product.ProductImageFiles.Select(x => new GetByProductIdProductImageQueryResponse() {
+                        var result = product.ProductImageFiles.Select(x => new ProductImageFile() {
                         Id= x.Id,
                         Path = x.Path,
                         FileName = x.FileName
                         }).ToList();
                         
-                        return  result;
+                        return  new(result, "Ürün resimleri listelendi", true);
                     
             }
     }

@@ -1,3 +1,4 @@
+using E_Ticaret.Application.Abstractions.Security;
 using E_Ticaret.Domain.Entities.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -15,30 +16,30 @@ namespace E_Ticaret.Application.Features.Commands.AuthCommands
         {
             private readonly UserManager<AppUser> _userManager;
             private readonly SignInManager<AppUser> _signInManager;
+            private readonly ITokenHelper _tokenHelper;
 
-            public LoginUserCommandHandler(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
+            public LoginUserCommandHandler(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, ITokenHelper tokenHelper)
             {
                 _userManager = userManager;
                 _signInManager = signInManager;
+                _tokenHelper = tokenHelper;
             }
 
             public async Task<LoginUserCommandResponse> Handle(LoginUserCommandRequest request, CancellationToken cancellationToken)
             {
-                var user = await _userManager.FindByEmailAsync(request.UserNameOrEmail);
-                if(user is null)
-                     user = await _userManager.FindByNameAsync(request.UserNameOrEmail);
-                 
-                 if(user is null)
-                     return new LoginUserCommandResponse(){Message = "Kullanıcı bilgilerinizi kontrol ediniz", Succeeded = false};
+                 var user = await _userManager.FindByEmailAsync(request.UserNameOrEmail);
+            if(user is null)
+                user = await _userManager.FindByNameAsync(request.UserNameOrEmail);
+            
+             if(user is null)
+                    return new (null, "Kullanıcı bulunamadı", false);
+             var result = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
 
-                  var result = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
-                  if(result.Succeeded)
-                  {
-                        return new LoginUserCommandResponse(){Message = "Giriş işlemi başarılı", Succeeded = true};
+             if(!result.Succeeded)
+                     return new(null, "Kullanıcı bilgileri doğrulanamadı!", false);
 
-                  }
-                     return new LoginUserCommandResponse(){Message = "Kullanıcı bilgilerinizi kontrol ediniz", Succeeded = false};
-
+              var token = _tokenHelper.CreateAccessToken();       
+              return new(token, "Kullanıcı girişi başarıyla yapıldı", true);
             }
         }
     }

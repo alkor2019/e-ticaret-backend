@@ -6,7 +6,7 @@ using MediatR;
 
 namespace E_Ticaret.Application.Features.Queries.CategoryQueries.GetAllQuery
 {
-    public class GetAllCategoryQueryRequest:IRequest<List<GetAllCategoryQueryResponse>>
+    public class GetAllCategoryQueryRequest:IRequest<GetAllCategoryQueryResponse>
     {
         
     }

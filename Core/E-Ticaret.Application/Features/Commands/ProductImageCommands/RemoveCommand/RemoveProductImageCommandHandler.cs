@@ -27,14 +27,10 @@ namespace E_Ticaret.Application.Features.Commands.ProductImageCommands.RemoveCom
             ProductImageFile? productImageFile = product?.ProductImageFiles.FirstOrDefault(x => x.Id == request.ImageId);
             product?.ProductImageFiles.Remove(productImageFile);
 
-             await _storageService.DeleteAsync(productImageFile.Path, productImageFile.FileName);
-            await _productWriteRepository.SaveAsync();
+              await _storageService.DeleteAsync(productImageFile.Path, productImageFile.FileName);
+            var result = await _productWriteRepository.SaveAsync();
 
-            return new()
-            {
-                 Message = "Resim silindi",
-                 Success = true
-            };
+            return result > 0 ? new("Ürün resmi silindi", true) : new("Ürün resmi silinirken bir hata oluştu", false);
         }
     }
 }

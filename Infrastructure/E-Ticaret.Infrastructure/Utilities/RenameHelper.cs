@@ -13,7 +13,7 @@ namespace E_Ticaret.Infrastructure.Utilities
             name = name.ToLower();
             name = Regex.Replace(name, @"[^0-9A-Za-z ,]", "");
             name = Regex.Replace(name, @"\s+", "-");
-            return name;
+            return name.Substring(0, name.Length -1);
         }
             /*=> name.Replace("\"", "")
                 .Replace("!", "")

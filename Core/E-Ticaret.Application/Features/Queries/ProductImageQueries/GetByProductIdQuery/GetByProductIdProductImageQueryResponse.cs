@@ -1,9 +1,12 @@
+using E_Ticaret.Application.Abstractions.Results;
+using E_Ticaret.Domain.Entities;
+
 namespace E_Ticaret.Application.Features.Queries.ProductImageQueries.GetByProductIdQuery
 {
-    public class GetByProductIdProductImageQueryResponse
+    public class GetByProductIdProductImageQueryResponse : DataResult<List<ProductImageFile>>
     {
-        public int Id { get; set; }
-        public string Path { get; set; }
-        public string FileName { get; set; }
+        public GetByProductIdProductImageQueryResponse(List<ProductImageFile> data, string message, bool success) : base(data, message, success)
+        {
+        }
     }
 }

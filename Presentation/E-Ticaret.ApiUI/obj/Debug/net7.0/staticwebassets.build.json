@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BqU80hg+SOY9Q3z4lN7qzb5ZkdFx0vBIfB9Qo+CZkOc=",
+  "Hash": "ucEFo3qTxOxy+l4URuS2y655XQjnSFVn4eYadFripss=",
   "Source": "E-Ticaret.ApiUI",
   "BasePath": "_content/E-Ticaret.ApiUI",
   "Mode": "Default",
@@ -32,6 +32,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/product-images/dometo-new-rn-2.jpg"
+    },
+    {
+      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/dometo-new-rn-3.jpg",
+      "SourceId": "E-Ticaret.ApiUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "BasePath": "_content/E-Ticaret.ApiUI",
+      "RelativePath": "product-images/dometo-new-rn-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/product-images/dometo-new-rn-3.jpg"
     },
     {
       "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/dometo-new-rn.jpg",
@@ -68,6 +85,23 @@
       "OriginalItemSpec": "wwwroot/product-images/nar-aac-2.jpg"
     },
     {
+      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/nar-aac-3.jpg",
+      "SourceId": "E-Ticaret.ApiUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "BasePath": "_content/E-Ticaret.ApiUI",
+      "RelativePath": "product-images/nar-aac-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/product-images/nar-aac-3.jpg"
+    },
+    {
       "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/nar-aac.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
@@ -100,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/product-images/new-bg-2.jpg"
+    },
+    {
+      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/new-bg-3.jpg",
+      "SourceId": "E-Ticaret.ApiUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "BasePath": "_content/E-Ticaret.ApiUI",
+      "RelativePath": "product-images/new-bg-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/product-images/new-bg-3.jpg"
     },
     {
       "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/new-bg.jpg",
@@ -202,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/product-images/newsbg-2.jpg"
+    },
+    {
+      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/newsbg-3.jpg",
+      "SourceId": "E-Ticaret.ApiUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "BasePath": "_content/E-Ticaret.ApiUI",
+      "RelativePath": "product-images/newsbg-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/product-images/newsbg-3.jpg"
     },
     {
       "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/newsbg.jpg",

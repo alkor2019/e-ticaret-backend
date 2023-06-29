@@ -14,17 +14,14 @@ namespace E_Ticaret.Application.Features.Commands.ProductCommands.CreateCommand
 
         public async Task<CreateProductCommandResponse> Handle(CreateProductCommandRequest request, CancellationToken cancellationToken)
         {
-            await _productWriteRepository.AddAsync(new(){
+           var result =  await _productWriteRepository.AddAsync(new(){
                 CategoryId = request.CategoryId,
                 Name = request.Name,
                 Price = request.Price,
                 UnitsInStock = request.UnitsInStock
             });
-            await _productWriteRepository.SaveAsync();
-            return new(){
-                Message = "Ürün eklendi",
-                Success = true
-            };
+             await _productWriteRepository.SaveAsync();
+            return result ? new("Ürün başarıyla kayıt edildi", true) : new("Ürün kayıt edilirken bir hata oluştu", false);
         }
    
    

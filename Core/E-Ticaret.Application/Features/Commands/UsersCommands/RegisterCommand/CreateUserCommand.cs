@@ -34,10 +34,10 @@ namespace E_Ticaret.Application.Features.Commands.UsersCommands.RegisterCommand
 
                     if(result.Succeeded)
                     {
-                        return  new(){Message ="Kullanıcı kaydı başarıyla oluşturuldu", Succeeded = result.Succeeded};
+                        return  new("Kullanıcı kaydı başarıyla oluşturuldu", result.Succeeded);
                     }
                     else{
-                            return  new(){Message ="Kullanıcı kaydı oluşturulurken bir hata oluştu", Succeeded = result.Succeeded};
+                            return  new ("Kullanıcı kaydı oluşturulurken bir hata oluştu",  result.Succeeded);
                     }
             }
 

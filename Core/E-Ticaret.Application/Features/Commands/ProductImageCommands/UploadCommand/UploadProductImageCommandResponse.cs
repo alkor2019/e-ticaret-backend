@@ -1,8 +1,11 @@
+using E_Ticaret.Application.Abstractions.Results;
+
 namespace E_Ticaret.Application.Features.Commands.ProductImageCommands.UploadCommand
 {
-    public class UploadProductImageCommandResponse
+    public class UploadProductImageCommandResponse : Result
     {
-        public string Message { get; set; } 
-        public bool Success { get; set; }
+        public UploadProductImageCommandResponse(string message, bool success) : base(message, success)
+        {
+        }
     }
 }

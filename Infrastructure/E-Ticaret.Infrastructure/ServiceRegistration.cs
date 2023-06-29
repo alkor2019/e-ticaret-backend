@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using E_Ticaret.Application.Abstractions.Security;
 using E_Ticaret.Application.Abstractions.Storage;
 using E_Ticaret.Infrastructure.Enums;
+using E_Ticaret.Infrastructure.Services.Security.Jwt;
 using E_Ticaret.Infrastructure.Services.Storage;
 using E_Ticaret.Infrastructure.Services.Storage.Local;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,6 +18,8 @@ namespace E_Ticaret.Infrastructure
         {
               
                 services.AddScoped<IStorageService, StorageService>();
+                services.AddScoped<ITokenHelper, TokenHelper>();
+                
         }
         public static void AddStorage<T>(this IServiceCollection services) where T:Storage, IStorage
         {

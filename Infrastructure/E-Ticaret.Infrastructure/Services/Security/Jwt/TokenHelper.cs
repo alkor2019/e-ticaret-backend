@@ -8,24 +8,27 @@ namespace E_Ticaret.Infrastructure.Services.Security.Jwt
 {
     public class TokenHelper : ITokenHelper
     {
-        private readonly IConfiguration _configuration;
+      
+        private readonly TokenOptions _tokenOptions;
         public TokenHelper(IConfiguration configuration)
         {
-            _configuration = configuration;
+            
+            _tokenOptions = configuration.GetSection("TokenOptions").Get<TokenOptions>();
         }
         public TokenModel CreateAccessToken()
         {
             TokenModel token = new();
-            SymmetricSecurityKey securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["TokenOptions:SecurityKey"]));
+            SymmetricSecurityKey securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_tokenOptions.SecurityKey));
+  
+            SigningCredentials signingCredentials = new(securityKey, SecurityAlgorithms.HmacSha256);
 
-            SigningCredentials credentials = new(securityKey, SecurityAlgorithms.HmacSha256);
-
-            token.Expiration = DateTime.Now.AddMinutes(int.Parse(_configuration["TokenOptions:Expiration"]));
+            token.Expiration = DateTime.Now.AddMinutes(_tokenOptions.Expiration);
 
             JwtSecurityToken jwtSecurity = new(
-                 audience:_configuration["TokenOptions:Audience"],
-                 issuer:_configuration["TokenOptions:Issuer"],
+                 audience:_tokenOptions.Audience,
+                 issuer:_tokenOptions.Issuer,
                  expires: token.Expiration,
+                 signingCredentials: signingCredentials,
                  notBefore: DateTime.UtcNow
             );
             JwtSecurityTokenHandler tokenHandler = new();
