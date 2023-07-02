@@ -12,6 +12,7 @@ namespace E_Ticaret.Application
          public static void AddApplicationServices(this IServiceCollection services)
          {
                services.AddMediatR(typeof(ServiceRegistiration));
+               services.AddHttpClient();
          }
     }
 }

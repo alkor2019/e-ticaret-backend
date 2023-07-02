@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using E_Ticaret.Application.Abstractions.Services.Authentications;
+using E_Ticaret.Application.Abstractions.Services.AuthServices;
+using E_Ticaret.Application.Abstractions.Services.UserServices;
 using E_Ticaret.Application.Repositories.Categories;
 using E_Ticaret.Application.Repositories.Customers;
 using E_Ticaret.Application.Repositories.FileEntities;
@@ -18,6 +21,8 @@ using E_Ticaret.Persistence.Repositories.InvoiceFiles;
 using E_Ticaret.Persistence.Repositories.Orders;
 using E_Ticaret.Persistence.Repositories.ProductImageFiles;
 using E_Ticaret.Persistence.Repositories.Products;
+using E_Ticaret.Persistence.Services.Auth;
+using E_Ticaret.Persistence.Services.Users;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -58,6 +63,11 @@ namespace E_Ticaret.Persistence
                 services.AddScoped<IProductImageFileWriteRepository, ProductImageFileWriteRepository>();
                 services.AddScoped<IInvoiceFileReadRepository, InvoiceFileReadRepository>();
                 services.AddScoped<IInvoiceFileWriteRepository, InvoiceFileWriteRepository>();
+                services.AddScoped<IUserService, UserService>();
+
+                services.AddScoped<IAuthService, AuthService>();
+                services.AddScoped<IExternalAuthentication, AuthService>();
+                services.AddScoped<IInternalAuthentication, AuthService>();
         }
     }
 }

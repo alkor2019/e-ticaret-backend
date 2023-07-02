@@ -1,3 +1,4 @@
+using E_Ticaret.Application.Abstractions.Services.UserServices;
 using E_Ticaret.Domain.Entities.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -15,30 +16,23 @@ namespace E_Ticaret.Application.Features.Commands.UsersCommands.RegisterCommand
 
         public class CreateUserCommandHandler : IRequestHandler<CreateUserCommandRequest, CreateUserCommandResponse>
         {
-            private readonly UserManager<AppUser> _userManager;
+            private readonly IUserService _userService;
 
-            public CreateUserCommandHandler(UserManager<AppUser> userManager)
+            public CreateUserCommandHandler(IUserService userService)
             {
-                _userManager = userManager;
+                _userService = userService;
             }
 
             public async Task<CreateUserCommandResponse> Handle(CreateUserCommandRequest request, CancellationToken cancellationToken)
             {
-                var result = await _userManager.CreateAsync(new AppUser(){
+                var result = await _userService.CreateUserAsync(new(){
                     FirstName = request.FirstName,
                     LastName = request.LastName,
                     UserName = request.UserName,
                     Email = request.Email,
-                    
-                }, request.Password);
-
-                    if(result.Succeeded)
-                    {
-                        return  new("Kullanıcı kaydı başarıyla oluşturuldu", result.Succeeded);
-                    }
-                    else{
-                            return  new ("Kullanıcı kaydı oluşturulurken bir hata oluştu",  result.Succeeded);
-                    }
+                    Password = request.Password
+                });
+                return new(result.Message, result.Success);
             }
 
         

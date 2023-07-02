@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/ara-ba.jpg",
+      "PackagePath": "staticwebassets/product-images/ara-ba.jpg"
+    },
+    {
       "Id": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/dometo-new-rn-2.jpg",
       "PackagePath": "staticwebassets/product-images/dometo-new-rn-2.jpg"
     },
