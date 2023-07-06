@@ -52,7 +52,7 @@ namespace E_Ticaret.Persistence.Services.Auth
         public async Task<TokenModel> GoogleLoginAsync(string idToken)
         {
             var settings = new ValidationSettings(){
-                Audience = new List<string>{"281851454258-c3ik3s54sre97mt0miolhhc9kbmtdl9a.apps.googleusercontent.com"}
+                Audience = new List<string>{""}
             };
              Payload payload = await ValidateAsync(idToken, settings);
              UserLoginInfo userLoginInfo = new("GOOGLE", payload.Subject, "GOOGLE");
