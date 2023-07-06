@@ -34,3 +34,15 @@
 /home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/obj/Debug/net7.0/refint/E-Ticaret.Domain.dll
 /home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/obj/Debug/net7.0/E-Ticaret.Domain.pdb
 /home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/obj/Debug/net7.0/ref/E-Ticaret.Domain.dll
+/home/websitem28/e-ticaret-backend/Core/E-Ticaret.Domain/bin/Debug/net7.0/E-Ticaret.Domain.deps.json
+/home/websitem28/e-ticaret-backend/Core/E-Ticaret.Domain/bin/Debug/net7.0/E-Ticaret.Domain.dll
+/home/websitem28/e-ticaret-backend/Core/E-Ticaret.Domain/bin/Debug/net7.0/E-Ticaret.Domain.pdb
+/home/websitem28/e-ticaret-backend/Core/E-Ticaret.Domain/obj/Debug/net7.0/E-Ticaret.Domain.csproj.AssemblyReference.cache
+/home/websitem28/e-ticaret-backend/Core/E-Ticaret.Domain/obj/Debug/net7.0/E-Ticaret.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/websitem28/e-ticaret-backend/Core/E-Ticaret.Domain/obj/Debug/net7.0/E-Ticaret.Domain.AssemblyInfoInputs.cache
+/home/websitem28/e-ticaret-backend/Core/E-Ticaret.Domain/obj/Debug/net7.0/E-Ticaret.Domain.AssemblyInfo.cs
+/home/websitem28/e-ticaret-backend/Core/E-Ticaret.Domain/obj/Debug/net7.0/E-Ticaret.Domain.csproj.CoreCompileInputs.cache
+/home/websitem28/e-ticaret-backend/Core/E-Ticaret.Domain/obj/Debug/net7.0/E-Ticaret.Domain.dll
+/home/websitem28/e-ticaret-backend/Core/E-Ticaret.Domain/obj/Debug/net7.0/refint/E-Ticaret.Domain.dll
+/home/websitem28/e-ticaret-backend/Core/E-Ticaret.Domain/obj/Debug/net7.0/E-Ticaret.Domain.pdb
+/home/websitem28/e-ticaret-backend/Core/E-Ticaret.Domain/obj/Debug/net7.0/ref/E-Ticaret.Domain.dll

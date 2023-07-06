@@ -39,5 +39,15 @@ namespace E_Ticaret.Persistence.Services.Users
                     }
                 return response;
         }
+
+        public async Task UpdateRefreshTokenAsync(AppUser user, string refreshToken, DateTime accessTokenExpiration, int addOnExpiration)
+        {
+            if(user != null)
+            {
+                   user.RefreshToken = refreshToken;
+                   user.RefreshTokenExpiration = accessTokenExpiration.AddSeconds(addOnExpiration).ToUniversalTime();
+                   await _userManager.UpdateAsync(user);
+            }
+        }
     }
 }

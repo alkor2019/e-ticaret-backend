@@ -42,7 +42,7 @@ namespace ETicaret.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("E_Ticaret.Domain.Entities.Customer", b =>
@@ -65,7 +65,7 @@ namespace ETicaret.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Customers");
+                    b.ToTable("Customers", (string)null);
                 });
 
             modelBuilder.Entity("E_Ticaret.Domain.Entities.FileEntity", b =>
@@ -100,7 +100,7 @@ namespace ETicaret.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("FileEntities");
+                    b.ToTable("FileEntities", (string)null);
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("FileEntity");
 
@@ -240,7 +240,7 @@ namespace ETicaret.Persistence.Migrations
 
                     b.HasIndex("CustomerId");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
             modelBuilder.Entity("E_Ticaret.Domain.Entities.Product", b =>
@@ -274,7 +274,7 @@ namespace ETicaret.Persistence.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
@@ -392,7 +392,7 @@ namespace ETicaret.Persistence.Migrations
 
                     b.HasIndex("ProductsId");
 
-                    b.ToTable("OrderProduct");
+                    b.ToTable("OrderProduct", (string)null);
                 });
 
             modelBuilder.Entity("ProductProductImageFile", b =>
@@ -407,7 +407,7 @@ namespace ETicaret.Persistence.Migrations
 
                     b.HasIndex("ProductsId");
 
-                    b.ToTable("ProductProductImageFile");
+                    b.ToTable("ProductProductImageFile", (string)null);
                 });
 
             modelBuilder.Entity("E_Ticaret.Domain.Entities.InvoiceFile", b =>

@@ -1,4 +1,5 @@
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Cryptography;
 using System.Text;
 using E_Ticaret.Application.Abstractions.Security;
 using Microsoft.Extensions.Configuration;
@@ -22,7 +23,7 @@ namespace E_Ticaret.Infrastructure.Services.Security.Jwt
   
             SigningCredentials signingCredentials = new(securityKey, SecurityAlgorithms.HmacSha256);
 
-            token.Expiration = DateTime.Now.AddMinutes(_tokenOptions.Expiration);
+            token.Expiration = DateTime.Now.AddSeconds(_tokenOptions.Expiration);
 
             JwtSecurityToken jwtSecurity = new(
                  audience:_tokenOptions.Audience,
@@ -33,7 +34,16 @@ namespace E_Ticaret.Infrastructure.Services.Security.Jwt
             );
             JwtSecurityTokenHandler tokenHandler = new();
             token.AccessToken = tokenHandler.WriteToken(jwtSecurity);
+            token.RefreshToken = CreateRefreshToken();
             return token;
+        }
+
+        public string CreateRefreshToken()
+        {
+            byte[] numbers = new byte[32];
+            RandomNumberGenerator random = RandomNumberGenerator.Create();
+            random.GetBytes(numbers);
+            return  Convert.ToBase64String(numbers);
         }
     }
 }

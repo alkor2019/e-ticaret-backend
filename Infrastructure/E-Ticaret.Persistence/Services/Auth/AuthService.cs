@@ -5,9 +5,11 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using E_Ticaret.Application.Abstractions.Security;
 using E_Ticaret.Application.Abstractions.Services.AuthServices;
+using E_Ticaret.Application.Abstractions.Services.UserServices;
 using E_Ticaret.Application.Dtos.Facebook;
 using E_Ticaret.Domain.Entities.Identity;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using static Google.Apis.Auth.GoogleJsonWebSignature;
 
 namespace E_Ticaret.Persistence.Services.Auth
@@ -18,13 +20,14 @@ namespace E_Ticaret.Persistence.Services.Auth
          private readonly ITokenHelper _tokenHelper;
          private readonly HttpClient _httpClient;
          private readonly SignInManager<AppUser> _signInManager;
-
-        public AuthService(UserManager<AppUser> userManager, ITokenHelper tokenHelper, IHttpClientFactory httpClientFactory, SignInManager<AppUser> signInManager)
+         private readonly IUserService _userservice;
+        public AuthService(UserManager<AppUser> userManager, ITokenHelper tokenHelper, IHttpClientFactory httpClientFactory, SignInManager<AppUser> signInManager, IUserService userservice)
         {
             _userManager = userManager;
             _tokenHelper = tokenHelper;
             _httpClient = httpClientFactory.CreateClient();
             _signInManager = signInManager;
+            _userservice = userservice;
         }
 
         public async Task<TokenModel> FacebookLoginAsync(string authToken)
@@ -49,7 +52,7 @@ namespace E_Ticaret.Persistence.Services.Auth
         public async Task<TokenModel> GoogleLoginAsync(string idToken)
         {
             var settings = new ValidationSettings(){
-                Audience = new List<string>{""}
+                Audience = new List<string>{"281851454258-c3ik3s54sre97mt0miolhhc9kbmtdl9a.apps.googleusercontent.com"}
             };
              Payload payload = await ValidateAsync(idToken, settings);
              UserLoginInfo userLoginInfo = new("GOOGLE", payload.Subject, "GOOGLE");
@@ -71,8 +74,22 @@ namespace E_Ticaret.Persistence.Services.Auth
              if(!result.Succeeded)
                      throw new("Kullanıcı bilgileri doğrulanamadı!");
 
-              var token = _tokenHelper.CreateAccessToken();       
+              var token = _tokenHelper.CreateAccessToken();
+              await _userservice.UpdateRefreshTokenAsync(user, token.RefreshToken, token.Expiration, 10);       
               return  token;
+        }
+
+        public async Task<TokenModel> RefreshTokenLoginAsync(string refreshToken)
+        {
+            AppUser? user = await _userManager.Users.FirstOrDefaultAsync(x => x.RefreshToken == refreshToken);
+            if(user != null && user?.RefreshTokenExpiration > DateTime.UtcNow)
+            {
+                   var token = _tokenHelper.CreateAccessToken();
+                   await _userservice.UpdateRefreshTokenAsync(user, token.RefreshToken, token.Expiration, 10);
+                   return token;
+            }
+            else
+               throw new Exception("Oturum zaman aşımına uğradığı için kapatılmıştır.");
         }
 
         private async Task<TokenModel> CreateUserExternalSourceAsync(AppUser user, string email, string firstName, string lastName, UserLoginInfo userLoginInfo)
@@ -102,6 +119,7 @@ namespace E_Ticaret.Persistence.Services.Auth
                   throw new("Invalid external authentication.");
 
                TokenModel token = _tokenHelper.CreateAccessToken();
+               await _userservice.UpdateRefreshTokenAsync(user, token.RefreshToken, token.Expiration, 10);
                return token;
         }
     }

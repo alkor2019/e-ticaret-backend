@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3la5QZeOzlJb7jVgza8i84s3cEya0Gisb2I8QIPwAQ4=",
+  "Hash": "0F724PO+aNivXd2VhZg3QKqi0j7JyBdtN6P74G/XoVw=",
   "Source": "E-Ticaret.ApiUI",
   "BasePath": "_content/E-Ticaret.ApiUI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "E-Ticaret.ApiUI/wwwroot",
       "Source": "E-Ticaret.ApiUI",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/ara-ba.jpg",
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/ara-ba.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "RelativePath": "product-images/ara-ba.jpg",
       "AssetKind": "All",
@@ -34,10 +34,27 @@
       "OriginalItemSpec": "wwwroot/product-images/ara-ba.jpg"
     },
     {
-      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/dometo-new-rn-2.jpg",
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/cskdfi-re.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "BasePath": "_content/E-Ticaret.ApiUI",
+      "RelativePath": "product-images/cskdfi-re.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/product-images/cskdfi-re.jpg"
+    },
+    {
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/dometo-new-rn-2.jpg",
+      "SourceId": "E-Ticaret.ApiUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "RelativePath": "product-images/dometo-new-rn-2.jpg",
       "AssetKind": "All",
@@ -51,10 +68,10 @@
       "OriginalItemSpec": "wwwroot/product-images/dometo-new-rn-2.jpg"
     },
     {
-      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/dometo-new-rn-3.jpg",
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/dometo-new-rn-3.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "RelativePath": "product-images/dometo-new-rn-3.jpg",
       "AssetKind": "All",
@@ -68,10 +85,10 @@
       "OriginalItemSpec": "wwwroot/product-images/dometo-new-rn-3.jpg"
     },
     {
-      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/dometo-new-rn.jpg",
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/dometo-new-rn.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "RelativePath": "product-images/dometo-new-rn.jpg",
       "AssetKind": "All",
@@ -85,10 +102,10 @@
       "OriginalItemSpec": "wwwroot/product-images/dometo-new-rn.jpg"
     },
     {
-      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/nar-aac-2.jpg",
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/nar-aac-2.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "RelativePath": "product-images/nar-aac-2.jpg",
       "AssetKind": "All",
@@ -102,10 +119,10 @@
       "OriginalItemSpec": "wwwroot/product-images/nar-aac-2.jpg"
     },
     {
-      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/nar-aac-3.jpg",
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/nar-aac-3.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "RelativePath": "product-images/nar-aac-3.jpg",
       "AssetKind": "All",
@@ -119,10 +136,10 @@
       "OriginalItemSpec": "wwwroot/product-images/nar-aac-3.jpg"
     },
     {
-      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/nar-aac.jpg",
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/nar-aac.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "RelativePath": "product-images/nar-aac.jpg",
       "AssetKind": "All",
@@ -136,10 +153,10 @@
       "OriginalItemSpec": "wwwroot/product-images/nar-aac.jpg"
     },
     {
-      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/new-bg-2.jpg",
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/new-bg-2.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "RelativePath": "product-images/new-bg-2.jpg",
       "AssetKind": "All",
@@ -153,10 +170,10 @@
       "OriginalItemSpec": "wwwroot/product-images/new-bg-2.jpg"
     },
     {
-      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/new-bg-3.jpg",
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/new-bg-3.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "RelativePath": "product-images/new-bg-3.jpg",
       "AssetKind": "All",
@@ -170,10 +187,10 @@
       "OriginalItemSpec": "wwwroot/product-images/new-bg-3.jpg"
     },
     {
-      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/new-bg.jpg",
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/new-bg.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "RelativePath": "product-images/new-bg.jpg",
       "AssetKind": "All",
@@ -187,10 +204,10 @@
       "OriginalItemSpec": "wwwroot/product-images/new-bg.jpg"
     },
     {
-      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/news-bg-2.jpg",
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/news-bg-2.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "RelativePath": "product-images/news-bg-2.jpg",
       "AssetKind": "All",
@@ -204,10 +221,10 @@
       "OriginalItemSpec": "wwwroot/product-images/news-bg-2.jpg"
     },
     {
-      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/news-bg.jpg",
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/news-bg.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "RelativePath": "product-images/news-bg.jpg",
       "AssetKind": "All",
@@ -221,10 +238,10 @@
       "OriginalItemSpec": "wwwroot/product-images/news-bg.jpg"
     },
     {
-      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/news-n-bg-2.jpg",
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/news-n-bg-2.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "RelativePath": "product-images/news-n-bg-2.jpg",
       "AssetKind": "All",
@@ -238,10 +255,10 @@
       "OriginalItemSpec": "wwwroot/product-images/news-n-bg-2.jpg"
     },
     {
-      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/news-n-bg.jpg",
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/news-n-bg.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "RelativePath": "product-images/news-n-bg.jpg",
       "AssetKind": "All",
@@ -255,10 +272,10 @@
       "OriginalItemSpec": "wwwroot/product-images/news-n-bg.jpg"
     },
     {
-      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/newsbg-2.jpg",
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/newsbg-2.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "RelativePath": "product-images/newsbg-2.jpg",
       "AssetKind": "All",
@@ -272,10 +289,10 @@
       "OriginalItemSpec": "wwwroot/product-images/newsbg-2.jpg"
     },
     {
-      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/newsbg-3.jpg",
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/newsbg-3.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "RelativePath": "product-images/newsbg-3.jpg",
       "AssetKind": "All",
@@ -289,10 +306,10 @@
       "OriginalItemSpec": "wwwroot/product-images/newsbg-3.jpg"
     },
     {
-      "Identity": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/newsbg.jpg",
+      "Identity": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/product-images/newsbg.jpg",
       "SourceId": "E-Ticaret.ApiUI",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/ayhan28ak/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
+      "ContentRoot": "/home/websitem28/e-ticaret-backend/Presentation/E-Ticaret.ApiUI/wwwroot/",
       "BasePath": "_content/E-Ticaret.ApiUI",
       "RelativePath": "product-images/newsbg.jpg",
       "AssetKind": "All",

@@ -40,6 +40,7 @@ namespace E_Ticaret.ApiUI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll([FromQuery] GetAllProductQueryRequest request)
         {
+           
              var response = await _mediator.Send(request);
              return Ok(response);
         }

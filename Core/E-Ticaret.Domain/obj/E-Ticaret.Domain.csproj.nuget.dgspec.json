@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj": {}
+    "/home/websitem28/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj": {}
   },
   "projects": {
-    "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj": {
+    "/home/websitem28/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj",
+        "projectUniqueName": "/home/websitem28/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj",
         "projectName": "E-Ticaret.Domain",
-        "projectPath": "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj",
-        "packagesPath": "/home/ayhan28ak/.nuget/packages/",
-        "outputPath": "/home/ayhan28ak/e-ticaret-backend/Core/E-Ticaret.Domain/obj/",
+        "projectPath": "/home/websitem28/e-ticaret-backend/Core/E-Ticaret.Domain/E-Ticaret.Domain.csproj",
+        "packagesPath": "/home/websitem28/.nuget/packages/",
+        "outputPath": "/home/websitem28/e-ticaret-backend/Core/E-Ticaret.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/ayhan28ak/.nuget/NuGet/NuGet.Config"
+          "/home/websitem28/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
